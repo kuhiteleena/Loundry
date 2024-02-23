@@ -1,0 +1,151 @@
+body{
+    font-size: 200%;
+}
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 100px;
+    padding: 2px 100px;
+    font-size: 60%;
+}
+.navigation {
+    display: flex;
+}
+.logo a{
+    text-decoration: none;
+    color: #415069;
+}
+.navigation a{
+    text-decoration: none;
+    color: rgb(136, 145, 155);
+    padding: 0px 10px;
+    
+}
+/* Container style */
+.roboto-light {
+    font-weight: 500;
+    font-size: 20px;
+}
+.container {
+    display: flex;
+    padding: 100px 130px;
+    background-color: #fafafc;
+}
+
+.logo{
+    cursor: pointer;
+    font-weight: 600;
+    font-size: 160%;
+    color: #415069;
+}
+.orbit-container img{
+    width: 80%;
+    padding: 0px 50px;
+}
+.name{
+    background-color: #e9f7ff;
+    padding: 18px 25px;
+    border-radius: 10px;
+    border: none;
+    color: #69b8f6;
+    font-size: 80%;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.heading1{
+    color: #4c5b67;
+}
+
+.heading2{
+    color: #01a8ff
+}
+
+.heading3{
+    color: #a9aaab;
+    padding-top: 10px;
+}
+
+.book{
+    background-color: #2fb4ff;
+    cursor: pointer;
+}
+
+.text{
+    width: 60%
+}
+
+.orbit-container{
+    width: 40%
+}
+
+h1{
+    margin: 0px;
+}
+
+h5{
+    margin: 0px;
+    font-weight: 100;
+}
+
+.bookbutton{
+    margin-top: 45px;
+}
+.book{    
+    font-size: 73%;
+    padding: 25px 35px;
+    border-radius: 18px;
+    color: white;
+    border: none;
+}
+
+
+.orbit-container {
+    position: relative;
+}
+
+.orbiting-img {
+    /* Additional styling for the image can go here */
+    /* For example, setting the width and height */
+    /* width: 100px;
+    height: 100px; */
+}
+
+.orbit-container:hover .orbiting-img {
+    animation: orbitRotation 1s linear infinite, /* Orbit rotation animation */
+                myAnim 1s ease 0.5s infinite normal forwards; /* Scale animation */
+}
+
+@keyframes orbitRotation {
+    0% {
+        transform: rotate(0deg) translateX(50px) rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg) translateX(50px) rotate(-360deg);
+    }
+}
+
+@keyframes myAnim {
+    0% {
+        animation-timing-function: ease-out;
+        transform: scale(1);
+        transform-origin: center center;
+    }
+    10% {
+        animation-timing-function: ease-in;
+        transform: scale(0.91);
+    }
+    17% {
+        animation-timing-function: ease-out;
+        transform: scale(0.98);
+    }
+    33% {
+        animation-timing-function: ease-in;
+        transform: scale(0.87);
+    }
+    45% {
+        animation-timing-function: ease-out;
+        transform: scale(1);
+    }
+}
